@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tedpermission_close" translatable="false">Close</string>
+    <string name="tedpermission_confirm" translatable="false">Confirm</string>
+    <string name="custom_close_text">Custom Close</string>
+    <string name="rationale_title">Permission required</string>
+    <string name="rationale_message">we need permission for write <b>storage</b> and find your <b>location</b></string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="aler_message"/>
+    <string name="aler_message_setting" />
+    <string name="back">BACK</string>
+    <string name="setting">SETTING</string>
+    <string name="tr_nh_spam_">Tránh Spam Quảng Cáo</string>
+</resources>

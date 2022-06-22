@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.95"
+        app:srcCompat="@drawable/background" />
+
+
+    <ImageView
+        android:id="@+id/house_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/img_bg"
+        app:layout_constraintStart_toStartOf="@+id/img_bg"
+        app:layout_constraintTop_toTopOf="@+id/img_bg"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.4"
+        app:srcCompat="@drawable/icon_permission" />
+
+    <TextView
+
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/aler_message_setting"
+        android:textColor="@color/com_vgp_black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg"
+        app:layout_constraintEnd_toEndOf="@+id/house_icon"
+        app:layout_constraintStart_toStartOf="@+id/house_icon"
+        app:layout_constraintTop_toBottomOf="@id/house_icon"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg"
+        app:layout_constraintEnd_toEndOf="@+id/img_bg"
+        app:layout_constraintStart_toStartOf="@+id/img_bg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintVertical_bias="0.1">
+
+        <TextView
+            android:id="@+id/tv_spam_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Tránh Spam Quảng Cáo"
+            android:textColor="#EE7E2D"
+            android:textSize="@dimen/_10ssp"
+            app:drawableStartCompat="@drawable/ic_baseline_check_circle_24" />
+
+        <TextView
+            android:id="@+id/tv_protect_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Bảo vệ tài khoản của bạn"
+            android:textColor="#EE7E2D"
+            android:textSize="@dimen/_10ssp"
+            app:drawableStartCompat="@drawable/ic_baseline_check_circle_24" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_confirm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_radiust"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="Tiếp tục"
+        android:textColor="@color/com_vgp_white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg"
+        app:layout_constraintEnd_toEndOf="@+id/img_bg"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.55"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_setting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_radiust"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="Cài đặt"
+        android:textColor="@color/com_vgp_white"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg"
+        app:layout_constraintEnd_toEndOf="@+id/img_bg"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.55" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

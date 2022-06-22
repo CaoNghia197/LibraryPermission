@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="com_vgp_text_label">#D69365</color>
+    <color name="com_vgp_white">#FFF</color>
+    <color name="com_vgp_black">#000</color>
+    <color name="com_vgp_black_transparent">#50000000</color>
+    <color name="com_vgp_text_gray">#DCDCDC</color>
+    <color name="com_vgp_gray">#686868</color>
+    <color name="text_gray">#666666</color>
+    <color name="text_dark_gray">#A9A9A9</color>
+    <color name="text_hint">#a0a0a0</color>
+    <color name="com_vgp_success">#22bb33</color>
+    <color name="com_vgp_error">#bb2124</color>
+    <color name="com_vgp_info">#5bc0de</color>
+    <color name="com_vgp_icon_push">#Ed6935</color>
+</resources>

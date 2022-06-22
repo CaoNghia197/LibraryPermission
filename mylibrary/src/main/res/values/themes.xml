@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+   <style name="Theme.LibraryPermisson" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:windowFullscreen">true</item>
+       <item name="android:fontFamily">@font/lexenddeca_regular</item>
+       <item name="fontFamily">@font/lexenddeca_regular</item>
+       <item name="android:windowIsTranslucent">true</item>
+       <item name="android:windowBackground">@color/com_vgp_black_transparent</item>
+       <item name="android:windowContentOverlay">@null</item>
+       <item name="android:backgroundDimEnabled">false</item>
+       <item name="android:textColorHint">@color/text_hint</item>
+       <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+    </style>
+</resources>
