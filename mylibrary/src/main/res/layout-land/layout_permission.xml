@@ -92,6 +92,7 @@
         android:fontFamily="sans-serif"
         android:inputType="text"
         android:text="Tiếp tục"
+        android:gravity="center"
         android:textColor="@color/com_vgp_white"
         android:textSize="@dimen/_10ssp"
         app:layout_constraintBottom_toBottomOf="@+id/img_bg"

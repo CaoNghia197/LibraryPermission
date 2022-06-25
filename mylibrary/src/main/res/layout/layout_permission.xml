@@ -92,6 +92,7 @@
         android:background="@drawable/bg_radiust"
         android:fontFamily="sans-serif"
         android:inputType="text"
+        android:gravity="center"
         android:text="Tiếp tục"
         android:textColor="@color/com_vgp_white"
         android:textSize="@dimen/_10ssp"

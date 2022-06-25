@@ -7,4 +7,6 @@ public interface CallbackPermission {
     void onPermissionGranted();
 
     void onPermissionDenied(List<String> deniedPermissions);
+
+    void onBackPressedPermission();
 }

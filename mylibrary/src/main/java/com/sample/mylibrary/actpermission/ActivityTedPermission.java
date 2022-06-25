@@ -25,12 +25,12 @@ import com.sample.mylibrary.basepermission.ObjectUtils;
 import com.sample.mylibrary.basepermission.TedPermissionBase;
 import com.sample.mylibrary.callback.CallbackPermission;
 
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.List;
-
 
 public class ActivityTedPermission extends AppCompatActivity {
     public static final int REQ_CODE_PERMISSION_REQUEST = 10;
@@ -189,7 +189,10 @@ public class ActivityTedPermission extends AppCompatActivity {
                 }
             }
         }
-
+        String [] arrayPermission = new String[needPermissions.size()];
+        for (int i = 0; i < needPermissions.size(); i++){
+            arrayPermission[i] = needPermissions.get(i);
+        }
         if (needPermissions.isEmpty()) {
             permissionResult(null);
         } else if (fromOnActivityResult) { //From Setting Activity
@@ -198,7 +201,7 @@ public class ActivityTedPermission extends AppCompatActivity {
                 .contains(Manifest.permission.SYSTEM_ALERT_WINDOW)) {   // window permission deny
             permissionResult(needPermissions);
         } else { // //Need Request Permissions
-            requestPermissions(needPermissions);
+            requestPermissions(arrayPermission);
         }
     }
 
@@ -228,8 +231,8 @@ public class ActivityTedPermission extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
-    public void requestPermissions(List<String> needPermissions) {
-        ActivityCompat.requestPermissions(this, needPermissions.toArray(new String[0]),
+    public void requestPermissions(String[]needPermissions) {
+        ActivityCompat.requestPermissions(this, needPermissions,
                 REQ_CODE_PERMISSION_REQUEST);
     }
 
@@ -343,4 +346,9 @@ public class ActivityTedPermission extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        callback.onBackPressedPermission();
+    }
 }

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Library Permission</string>
+    <string name="message_permission">Quyền truy cập thiết bị , hình ảnh ,file,(Bắt Buộc)\n Quyền này chỉ dùng cho lưu trữ các tài liệu game dùng lượng thiết bị không đủ,dùng không gian trống của ảnh Media File và không có hành vi lấy các thông tin nhạy cảm của người dùng \n\n\n\nVideo,Ghi âm (Bắt Buộc) ,Quyền này dành cho tính năng chat ghi âm trong game và không có các hành vi thông tin nhạy cảm cuả người dùng</string>
+    <string name="title_permission">Chơi game cần các quyền sau</string>
+    <string name="permission">Cấp quyền</string>
+    <string name="dialog_aler_title">Yêu cầu quyền người dùng bị từ chối</string>
+    <string name="dialog_aler_message">Không thể sử dụng ứng dụng khi không được sự đồng ý từ người dùng</string>
+    <string name="dialog_aler_back">Quay lại</string>
+    <string name="dialog_aler_setting">Cài đặt</string>
+    <string name="aler_message">Nếu bạn từ chối quyền truy cập \n Bạn sẽ không thể sử dụng dịch vụ này.\nVui lòng bật quyền tại\n<font color="#EE7E2D" face="font_family"><b>[Cài Đặt] > [Quyền]</b></font></string>
+    <string name="aler_message_setting">Hãy cho phép <font color="#EE7E2D" face="font_family"><b>Song Kiếm Loạn Vũ</b></font> truy cập \n hoạt động trong game của bạn nhằm:</string>
 </resources>
